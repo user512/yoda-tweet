@@ -16,8 +16,7 @@
 
 }
 
-
-body {
+body#welcome-body {
   background-image : url("http://i.giphy.com/kB2uyoigIXPMI.gif");
   background-color: #cccccc;
   background-repeat: no-repeat;
@@ -32,7 +31,7 @@ body {
 
 .welcome {
   font-weight: 900;
-  margin-top: 60%;
+  margin-top: 50%;
 }
 
 .sign-up-form {
