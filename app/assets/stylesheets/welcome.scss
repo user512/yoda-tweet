@@ -1,0 +1,46 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+  color: #CEE4EB;
+  font-family: 'Hind Vadodara', sans-serif;
+}
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #CEE4EB;
+
+}
+
+
+body {
+  background-image : url("http://i.giphy.com/kB2uyoigIXPMI.gif");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.container{
+  text-align: center;
+  margin: 5%;
+}
+
+.welcome {
+  font-weight: 900;
+  margin-top: 60%;
+}
+
+.sign_up {
+    background: transparent url(app/assets/images/sign-in.png) cover;
+    cursor:pointer;
+    border: none;
+}
+
+.debug {
+    border: 1px solid red;
+}

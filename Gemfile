@@ -29,8 +29,9 @@ gem 'omniauth-twitter'
 gem 'twitter'
 
 # Translate tweet to Yodaish
-gem 'yodaspeak', path: "../yodaspeak"
+gem 'yodaspeak'
 
+gem 'dotenv'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -47,5 +48,8 @@ group :development, :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   # gem 'web-console', '~> 2.0'
   gem 'pry-rails'
+
+  gem 'better_errors'
+  gem "binding_of_caller"
 end
 
