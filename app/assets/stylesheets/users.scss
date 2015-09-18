@@ -20,23 +20,17 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 
-  /*
-  This doesn't work
-  margin-left: -25%;
-  margin-top: -25%;
-  */
-
-  width: 40%;
+  width: auto;
   height: auto;
 
-  padding: 20px;
-  background: white;
+
+  padding: 5%;
   color: white;
   text-align: center;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);*/
 }
 
-
+/*
 .debug {
     border: 1px solid blue;
-}
+}*/

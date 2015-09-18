@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'users/show'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -11,6 +9,7 @@ Rails.application.routes.draw do
   get 'auth/twitter/callback' => 'sessions#create'
 
   get 'users/:id' => 'users#show', as: :show
+  delete 'sessions/:id' => 'sessions#destroy', as: :logout
 
   # get 'user/:id' => "use"
   # get ''
