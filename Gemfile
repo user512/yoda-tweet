@@ -30,6 +30,8 @@ gem 'twitter'
 
 # Translate tweet to Yodaish
 gem 'yodaspeak'
+
+gem 'dotenv'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
