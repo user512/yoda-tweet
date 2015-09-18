@@ -35,12 +35,19 @@ body {
   margin-top: 60%;
 }
 
-.sign_up {
+.sign-up-form {
+  margin-top: 5%;
+}
+
+.sign-up {
     background: transparent url(app/assets/images/sign-in.png) cover;
+    background-size: 400px 72px;
     cursor:pointer;
     border: none;
 }
 
-.debug {
+
+
+/*.debug {
     border: 1px solid red;
-}
+}*/
