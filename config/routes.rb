@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get 'auth/twitter/callback' => 'sessions#create'
 
+  # get ''
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
