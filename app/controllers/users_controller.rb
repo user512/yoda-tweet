@@ -1,12 +1,15 @@
 class UsersController < ApplicationController
-include SessionsHelper
+include SessionsHelper,UsersHelper
 before_action :check_session
+require 'yodaspeak'
 
   def show
 
   end
 
   def tweet
-    render 'tweet', layout: false
+    message = yodaish(params[:tweet])
+    current_user.tweet(message)
+    redirect_to show_path
   end
 end

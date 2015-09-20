@@ -21,4 +21,5 @@ module SessionsHelper
   def check_session
     render file: "#{Rails.root}/public/422.html", layout: false, status: 422 if current_user? == false
   end
+
 end

@@ -1,5 +1,9 @@
 <div>
-
+  <%= form_tag(tweet_path, method: "get") do %>
+    <%= label_tag("Search for:") %>
+    <%= text_field_tag(:tweet) %>
+    <%= submit_tag("Search") %>
+  <% end %>
 
 
 </div>
