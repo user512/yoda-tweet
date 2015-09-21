@@ -8,6 +8,11 @@ Rails.application.routes.draw do
 
   get 'auth/twitter/callback' => 'sessions#create'
 
+  get 'users/:id' => 'users#show', as: :show
+  get 'users/:id/tweet' => 'users#tweet', as: :tweet
+  delete 'sessions/:id' => 'sessions#destroy', as: :logout
+
+  # get 'user/:id' => "use"
   # get ''
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

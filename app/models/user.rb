@@ -13,5 +13,18 @@ class User < ActiveRecord::Base
     user.token = auth["credentials"]["token"]
     user.secret = auth["credentials"]["secret"]
     user.save
+    user
   end
+
+  def tweet(tweet)
+    client = Twitter::REST::Client.new do |config|
+      config.consumer_key        = ENV["TWITTER_API_KEY"]
+      config.consumer_secret     = ENV["TWITTER_API_SECRET"]
+      config.access_token        = token
+      config.access_token_secret = secret
+    end
+
+    client.update(tweet)
+  end
+
 end

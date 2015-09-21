@@ -1,9 +1,24 @@
-<div class="container debug">
-  <div class="welcome debug">
-    <h1 class="debug">Yweet</h1>
-    <h3 class="debug">Now you can Tweet like Yoda</h3>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YodaTweet</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" />
+  <link href='https://fonts.googleapis.com/css?family=Hind+Vadodara' rel='stylesheet' type='text/css'>
+</head>
+<body id="welcome-body">
+  <div class="container debug">
+    <div class="welcome debug">
+      <h1 class="debug">Yweet</h1>
+      <h3 class="debug">Now you can Tweet like Yoda</h3>
+    </div>
+    <div class="sign-up-form">
+      <%= link_to image_tag("sign-in.png"), "/auth/twitter", :class => "sign-up debug" %>
+    </div>
   </div>
-  <div class="sign-up-form">
-    <%= link_to image_tag("sign-in.png"), "/auth/twitter", :class => "sign-up debug" %>
-  </div>
-</div>
+
+</body>
+</html>

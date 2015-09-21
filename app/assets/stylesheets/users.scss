@@ -1,0 +1,42 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image : url("http://i.giphy.com/WbheD0Y54pBPW.gif");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
+}
+
+
+.user-container{
+
+}
+
+.tweet-form {
+
+}
+
+.inner-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: auto;
+  height: auto;
+
+
+  padding: 5%;
+  color: white;
+  text-align: center;
+  /*box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);*/
+}
+
+
+/*.debug {
+    border: 1px solid blue;
+    color: black;
+}*/
