@@ -1,4 +1,5 @@
 module UsersHelper
+require 'unirest'
 
   def yodaish(tweet)
     Yodaspeak.credentials(ENV["YODASPEAK_API_KEY"])
