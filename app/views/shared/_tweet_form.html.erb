@@ -2,7 +2,7 @@
   <%= form_tag(tweet_path, method: "get") do %>
     <%= label_tag("Yodafy your Tweet") %>
     <%= text_field_tag :tweet, nil,  :required => true %>
-    <%= submit_tag("Yweet") %>
+    <%= submit_tag "Yweet", :class => "tweet" %>
   <% end %>
 
 
